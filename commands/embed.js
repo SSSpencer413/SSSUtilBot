@@ -46,15 +46,18 @@ async function execute(interaction) {
 	if (thumbnail) embed.setThumbnail(thumbnail);
 
 	// Footer
-	let footerData = {}
-
 	let footer = interaction.options.getString('footer');
-	if (footer) footerData.text = footer;
+	if (footer) {
+		let footerData = {
+			text : footer
+		}
 
-	let footerIcon = interaction.options.getString('footer-icon');
-	if (footerIcon) footerData.iconURL = footerIcon;
+		// These fields require the footer field
+		let footerIcon = interaction.options.getString('footer-icon');
+		if (footerIcon) footerData.iconURL = footerData;
 
-	if (footerData != {}) embed.setFooter(footerData);
+		embed.setFooter(footerData);
+	}
 
 	// Timestamp
 	let timestamp = interaction.options.getInteger('timestamp');
@@ -113,7 +116,7 @@ module.exports = {
 				.setDescription('Set the footer of the embed'))
 		.addStringOption(option => 
 			option.setName('footer-icon')
-				.setDescription('Set the footer icon of the embed'))
+				.setDescription('Set the footer icon of the embed. Requires footer field to be set'))
 		.addIntegerOption(option => 
 			option.setName('timestamp')
 				.setDescription('Set the timestamp of the embed. Uses unix timestamp, or -1 for now!'))
