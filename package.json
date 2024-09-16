@@ -1,0 +1,16 @@
+{
+  "name": "utilbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "register": "node deploy-commands.js",
+    "start" : "node index.js"
+  },
+  "author": "SSSpencer413",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.16.1",
+    "dotenv": "^16.4.5"
+  }
+}
