@@ -54,7 +54,7 @@ async function execute(interaction) {
 
 		// These fields require the footer field
 		let footerIcon = interaction.options.getString('footer-icon');
-		if (footerIcon) footerData.iconURL = footerData;
+		if (footerIcon) footerData.iconURL = footerIcon;
 
 		embed.setFooter(footerData);
 	}
