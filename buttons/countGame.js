@@ -12,6 +12,8 @@ async function execute(interaction) {
 	var message = interaction.message;
 	if (!message) return interaction.reply({ content: `Something went wrong!`, ephemeral: true });
 
+	if (message.author.id == "691014251136942110") return;
+
 	var content = message.content;
 	if (!content) return interaction.reply({ content: `Something went wrong!`, ephemeral: true });
 
