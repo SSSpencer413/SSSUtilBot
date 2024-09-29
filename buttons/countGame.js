@@ -4,7 +4,7 @@ const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = re
 
 const Milestones = [
 	{value: 100, message: ""}, 
-	{value: 250, message: "\nYou are all stars! :star:"}, 
+	{value: 250, message: "\nYou're a star! :star:"}, 
 	{value: 500, message: "\nTeamwork makes the dream work! :glowing_star:"}, 
 	{value: 1000, message: "\nCongratulations everyone! That's a lot of clicks! You all deserve a trophy! :trophy:"}];
 
