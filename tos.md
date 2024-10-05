@@ -16,6 +16,11 @@ When using this bot, you agree to adhere to the following rules:
 - You will not use the bot to spam, harass, or offend other users.
 - You will comply with all applicable local, state, national, and international laws and regulations.
 
+Additionally, you agree not to:
+- Uploading offensive, illegal, or copyrighted images without permission.
+- Engaging in abusive, hateful, or harassing behavior toward other users.
+- Exploiting any bugs or vulnerabilities in the Bot.
+
 ## 4. Intellectual Property
 All content provided in the default bot is my own property, you may NOT use it as your own. For images uploaded to the bot:
 - You agree that you have the necessary rights to upload, modify, and share any image you submit to the Bot.
